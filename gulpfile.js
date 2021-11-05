@@ -13,7 +13,8 @@ const elixir = require('laravel-elixir');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js')
+        .webpack('app.js')
+        .copy('resources/assets/fonts', 'build/fonts')
         .version(['css/app.css', 'js/app.js'])
         .browserSync({
             proxy: 'laracart-docs.dev'

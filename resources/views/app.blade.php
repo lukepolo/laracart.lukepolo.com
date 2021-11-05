@@ -17,7 +17,7 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     </head>
     <body class="language-php">
 
@@ -52,6 +52,6 @@
             <a target="_blank" href="https://lukepolo.com">LukePOLO.com</a>
         </div>
 
-        <script src="{{ elixir('js/app.js') }}"></script>
+        <script src="{{ mix('/js/app.js') }}"></script>
     </body>
 </html>

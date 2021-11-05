@@ -1,22 +1,25 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
-  },
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
-    "jquery": "^3.1.0",
-    "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-browsersync-official": "^1.0.0",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "lodash": "^4.17.13",
-    "prismjs": "^1.6.0",
-    "webpack": "^2.6.1"
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.13",
+    "prismjs": "^1.25.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.37",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.1.0"
   }
 }

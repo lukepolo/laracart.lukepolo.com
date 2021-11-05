@@ -28,8 +28,6 @@ COPY composer.lock composer.json ./
 
 COPY . .
 
-RUN git submodule update --init
-
 RUN composer install
 
 # Copy from the stage 1

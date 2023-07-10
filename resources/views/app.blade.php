@@ -18,6 +18,8 @@
         <![endif]-->
 
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2L5ZTNZS1C"></script>
     </head>
     <body class="language-php">
 
